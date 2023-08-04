@@ -1,0 +1,1 @@
+<img src="{{ asset('logo/gintoki.jpeg') }}" width="100px">
