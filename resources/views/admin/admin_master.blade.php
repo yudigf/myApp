@@ -43,7 +43,6 @@
             @include('admin.body.sidebar')
             <!-- Left Sidebar End -->
 
-            
 
             <!-- ============================================================== -->
             <!-- Start right Content here -->
