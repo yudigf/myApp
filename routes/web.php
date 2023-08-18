@@ -2,7 +2,6 @@
 
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Demo\DemoController;
-use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -34,6 +33,8 @@ Route::controller(DemoController::class)->group(function () {
 //Admin All Route
 Route::controller(AdminController::class)->group(function () {
     Route::get('/admin/logout', 'destroy')->name('admin.logout');
+    Route::get('/admin/profile', 'profile')->name('admin.profile');
+    Route::get('/edit/profile', 'editProfile')->name('edit.profile');
 });
 
 Route::get('/dashboard', function () {
