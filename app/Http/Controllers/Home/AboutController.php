@@ -57,4 +57,10 @@ class AboutController extends Controller
             return redirect()->back()->with($notification);
         }
     }
+
+    public function homeAbout()
+    {
+        $aboutPage = About::find(1);
+        return view('frontend.about_page',compact('aboutPage'));
+    }
 }
