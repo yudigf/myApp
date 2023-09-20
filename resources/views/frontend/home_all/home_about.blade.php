@@ -1,6 +1,5 @@
 @php
     $aboutPage = App\Models\About::find(1);
-
 @endphp
 
 <section id="aboutSection" class="about">
